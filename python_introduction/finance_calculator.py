@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+#Prompt the user for monthly income and expenses
+income = float(input("Enter your monthly income: "))
+expenses = float(input("Enter your total monthly expenses: "))
+#Calculate monthly savings
+savings = income - expenses
+#Calculate projected annual savings, inclusing 5% interest
+projected_savings = savings * 12 + (savings * 12 * 0.05)
+#Output the results 
+print(f"Your monthly savings are ${savings:.2f}.")
+print(f"Projected savings after one year, with interest, is: ${projected_savings:.2f}.")
