@@ -12,8 +12,7 @@ time_bound = input("Is it time-bound? (yes/no):").strip().lower()
 while time_bound not in valid_time_bound:
     print("Invalid response! Please answer yes or no.")
     time_bound = input("Is it time bound? (yes/no):").strip().lower()
-#Process the input 
-match priority:
+#Process the input
     if priority == "high":
         reminder = f"'{task}' is a high priority task."
     elif pririoty == "medium":
