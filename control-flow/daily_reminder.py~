@@ -12,14 +12,15 @@ time_bound = input("Is it time-bound? (yes/no):").strip().lower()
 while time_bound not in valid_time_bound:
     print("Invalid response! Please answer yes or no.")
     time_bound = input("Is it time bound? (yes/no):").strip().lower()
-#Process the input
-    if priority == "high":
+#Match-case for priority
+match priority:
+    case "high":
         reminder = f"'{task}' is a high priority task."
-    elif pririoty == "medium":
+    case "medium":
         reminder = f"'{task}' is a medium priority task."
-    elif pririoty == "low":
+    case  "low":
         reminder = f"'{task}' is a low priority task."
-    else:
+    case _:
         reminder = f"'{task}' has an unknown priority. Please review."
 #Modify the reminder if the task is time-bound
 if time_bound == "yes":
