@@ -20,7 +20,7 @@ def main():
 
         if choice == '1':
             #Add an item to shopping list
-            item = input("Enter the item to add:").strip()
+            item = input("Enter the item to add:").strip() #This matches the eact required prompt
             shopping_list.append(item)
             print(f"'{item}' has been added to the shopping list.")
         elif choice == '2':
