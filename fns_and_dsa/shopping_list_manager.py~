@@ -20,12 +20,12 @@ def main():
 
         if choice == '1':
             #Add an item to shopping list
-            item = input("Enter the item to add:").strip() #This adds an item
+            item = input("Enter the item to add:")  #This adds an item
             shopping_list.append(item)
             print(f"'{item}' has been added to the shopping list.")
         elif choice == '2':
             #Remove an item from the shopping list
-            item = input("Enter the name of the item to remove:").strip()
+            item = input("Enter the name of the item to remove:") 
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"'{item}' has been removed from the shopping list.")
